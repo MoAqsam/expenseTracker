@@ -1,0 +1,20 @@
+nav {
+    width:20%;
+    height: 100%;
+    float: left;
+    transition: 0.5s;
+    background:red;
+    overflow: hidden;
+    padding-bottom: 5000px;
+}
+nav ul li {
+    list-style: none;
+    padding:2.5px 0px;
+    cursor: pointer;
+}
+nav ul li:active {
+    color:blue;
+}
+nav ul li:focus {
+    color:blue;
+}
