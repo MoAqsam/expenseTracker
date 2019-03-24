@@ -19,15 +19,16 @@ var toggle = false;
 
 function toggleSideNav(){
     if(toggle){
-        toggle = false;
-        document.getElementById("sideNav").style.marginLeft = "-20%";
+        toggle = false;        
+        document.getElementById("sideNav").style.marginLeft = "-200px";
         document.getElementById("sideNavButton").style.display = "block";
-        document.getElementById("content").style.marginLeft = "-20%";
+        document.getElementById("Dashboard").style.marginLeft = "0px";
+   
     }else{
         toggle = true;
         document.getElementById("sideNav").style.marginLeft = "0";
         document.getElementById("sideNavButton").style.display = "none";
-        document.getElementById("content").style.marginLeft = "-20%";
+        document.getElementById("Dashboard").style.marginLeft = "200px";
     }
 }
 

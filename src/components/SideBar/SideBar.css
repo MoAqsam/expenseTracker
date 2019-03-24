@@ -1,9 +1,9 @@
 nav {
     /* display:none; */
     position: fixed;
-    width:20%;
+    min-width: 200px;
     height: 100%;
-    margin-left: -20%;
+    margin-left: -200px;
     transition: 0.5s;
     background: #212121;
     color:white;
