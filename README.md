@@ -1,3 +1,7 @@
+## Expense Tracker
+This is an open source project for tracking expenses. Currently a work in progress. Stay tuned for updates and initial release.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
