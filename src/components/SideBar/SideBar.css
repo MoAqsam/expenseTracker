@@ -1,20 +1,32 @@
 nav {
+    /* display:none; */
+    position: fixed;
     width:20%;
     height: 100%;
-    float: left;
+    margin-left: -20%;
     transition: 0.5s;
-    background:red;
-    overflow: hidden;
-    padding-bottom: 5000px;
+    background: #212121;
+    color:white;
+    padding-top: 20px;
 }
 nav ul li {
     list-style: none;
     padding:2.5px 0px;
     cursor: pointer;
 }
-nav ul li:active {
-    color:blue;
+
+nav ul li:hover {
+    color:grey;
 }
-nav ul li:focus {
-    color:blue;
+button {    
+    display: inline;
+    position: fixed;
+    border: none;
+    color:white;
+    background:#212121;
+    padding: 10px 20px;
+}
+
+button:focus {
+    outline:0;
 }

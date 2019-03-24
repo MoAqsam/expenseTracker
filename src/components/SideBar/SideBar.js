@@ -4,26 +4,32 @@ import "./SideBar.css";
 const SideBar = () => {
     return(
         <Fragment>        
-        <nav id="sideNav">
-            <span onClick={closeNav}>Hamburger</span>
+        <nav id="sideNav">            
             <ul>
-                <li>Expense's</li>
+                <li onClick={toggleSideNav}>X</li>
+                <li>Dashboard</li>
                 <li>Monthly Overview</li>                                
             </ul>
         </nav>
-        <a onClick={openNav}>open</a>
+        <button onClick={toggleSideNav}  id="sideNavButton">></button>
         </Fragment>
     );
 }
+var toggle = false;
 
-function openNav(){
-    console.log("nav opened");
-    document.getElementById("sideNav").style.display = "block";
+function toggleSideNav(){
+    if(toggle){
+        toggle = false;
+        document.getElementById("sideNav").style.marginLeft = "-20%";
+        document.getElementById("sideNavButton").style.display = "block";
+        document.getElementById("content").style.marginLeft = "-20%";
+    }else{
+        toggle = true;
+        document.getElementById("sideNav").style.marginLeft = "0";
+        document.getElementById("sideNavButton").style.display = "none";
+        document.getElementById("content").style.marginLeft = "-20%";
+    }
 }
 
-function closeNav(){
-    console.log("nav closed");
-    document.getElementById("sideNav").style.display = "none";
-}
 
 export default SideBar;

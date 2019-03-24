@@ -1,0 +1,11 @@
+.Dashboard {
+    background:whitesmoke;
+    padding-top: 40px;
+    height: 100vh;
+    text-align: center;
+}
+
+.Dashboard .row h1 {
+    display: inline-block;
+    text-align: center;
+}
